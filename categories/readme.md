@@ -1,6 +1,5 @@
 # Categories:
 
-- [data-representation](./data-representation.md)
 - [replica-structure](./replica-structure.md)
 - [access-control](./access-control.md)
 - [replication](./replication.md)
