@@ -14,7 +14,7 @@
 
 The HLDB protocol should be able to fill each of these requirements, so all solutions will keep these in mind.
 
-1. hldb is a [local-first](https://martin.kleppmann.com/papers/local-first.html) database.
+1. hldb is a [local-first](https://martin.kleppmann.com/papers/local-first.html) database protocol.
 2. access-control must support dynamic adds/removes of read or write access.
 3. replication must play well with both p2p replication and through simple data hosts.
 4. data representation is general-purpose/universal and able to merge nested properties.
