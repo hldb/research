@@ -2,10 +2,11 @@
 
 Review documents are used to classify and organize research by including links/DOIs, notes, and relevancies.
 
-- [Example](./example.md)
 - [Asynchronous Ratcheting Trees](./asynchronous-ratcheting-trees.md)
 
 ## Review Template
+
+- [Example](./example.md)
 
 Each review must start with a table:
 
