@@ -19,6 +19,7 @@ j
 
 - Could be a complete solution for access control by protecting read and write access in a scalable, dynamic, and asynchronous way.
 - Forward secrecy property complicates eventual consistency guarantees.
+- Hard to handle concurrent edits to the tree without a server. Requires a convergent data type to be built. Might be good to instead investigate [DCGKA](./dcgka.md)
 
 ## Solutions: 
 
