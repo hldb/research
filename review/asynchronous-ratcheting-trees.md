@@ -21,11 +21,9 @@ j
 - Forward secrecy property complicates eventual consistency guarantees.
 - Hard to handle concurrent edits to the tree without a server. Requires a convergent data type to be built. Might be good to instead investigate [DCGKA](./dcgka.md)
 
-## Solutions: 
+## Constraints:
 
-- remove forward secrecy and this becomes much easier to use with replication via ipld pinners as history should be totally readable to new agents, a good thing in this situation but hard to change.
-- have a weaker consistency model for replication via ipld pinners. complete replication of anything previous to read access being granted would need to be delivered by other peers with complete read access.
-- used to share a new symmetric key after a access control change. when read access is granted to a new user they get all previous symmetric keys sent to them. when read access is revoked they are removed from the ART and a new symmetric key is shared.
+- forward secrecy may prevent new peers the ability to read history when combined with some replica structures. either 1) FS needs to be removed by generating seperate AES keys for encrypting db operations and sharing all previous keys with new readers or 2) readers upload a [compacted] delta encrypted with the new keys.
 
 ## Abilities:
 
