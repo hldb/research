@@ -18,6 +18,7 @@ The HLDB protocol should be able to fill each of these requirements, so all solu
 2. access-control must support dynamic adds/removes of read or write access.
 3. replication must play well with both p2p replication and through simple data hosts.
 4. data representation is general-purpose/universal and able to merge nested properties.
+5. ensures causal consistency by default
 
 > This list may change as the different areas are better understood while researching.
 
