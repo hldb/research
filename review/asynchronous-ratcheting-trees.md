@@ -23,7 +23,7 @@ j
 
 ## Constraints:
 
-- forward secrecy may prevent new peers the ability to read history when combined with some replica structures. either 1) FS needs to be removed by generating seperate AES keys for encrypting db operations and sharing all previous keys with new readers or 2) readers upload a [compacted] delta encrypted with the new keys.
+- forward secrecy may prevent new peers the ability to read history when combined with some replica structures. either 1) FS needs to be removed by generating seperate AES keys for encrypting db operations and sharing all previous keys with new readers or 2) readers upload a [compacted] delta encrypted with the new keys whenever there is new member or key update.
 
 ## Abilities:
 
